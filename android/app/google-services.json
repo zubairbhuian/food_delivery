@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "167741271762",
+    "project_id": "ecommece-assignment",
+    "storage_bucket": "ecommece-assignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167741271762:android:a42abeeaf010804770c70b",
+        "android_client_info": {
+          "package_name": "com.example.food_delivery_dbestech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167741271762-o7andflusoachp8aqdm7jakqa4hspj0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW0D0SkKsVTvWR0Ly1HQtoxuundjN--v4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167741271762-o7andflusoachp8aqdm7jakqa4hspj0k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
