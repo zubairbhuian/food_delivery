@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:food_delivery_dbestech/pages/login/login_view.dart';
 import 'package:food_delivery_dbestech/routes/route_helper.dart';
 import 'package:food_delivery_dbestech/utils/dimensions.dart';
 import 'package:get/get.dart';
@@ -38,9 +39,7 @@ class _SplashScreenState extends State<SplashScreen>
     );
     Timer(
       const Duration(seconds: 3),
-      () => Get.offNamed(
-        RouteHelper.getLogin(),
-      ),
+      () => Get.off(const LoginView()),
     );
     _loadResource();
   }

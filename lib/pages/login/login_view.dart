@@ -29,7 +29,6 @@ class LoginView extends GetView<LoginController> {
                 Padding(
                   padding: const EdgeInsets.all(25),
                   child: Form(
-                   
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
@@ -90,7 +89,7 @@ class LoginView extends GetView<LoginController> {
                                     ))
                                 : IconButton(
                                     onPressed: () {
-                                      controller.obscureText =true;
+                                      controller.obscureText = true;
                                       controller.update();
                                     },
                                     icon: const Icon(
@@ -116,7 +115,9 @@ class LoginView extends GetView<LoginController> {
                           height: 20,
                         ),
                         CustomBtn(
-                          onPressed: () async {},
+                          onPressed: () async {
+                            controller.eamilLogin();
+                          },
                           title: 'Sign in',
                         ),
                         const SizedBox(

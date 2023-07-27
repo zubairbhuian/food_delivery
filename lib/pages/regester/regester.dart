@@ -225,6 +225,7 @@ class RegestrationView extends StatelessWidget {
                       onPressed: () async {
                         if (controller.formKey.currentState!.validate()) {
                           // controller.handralRegester();
+                          controller.eamilRegestation();
                         }
                       },
                     ),

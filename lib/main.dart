@@ -2,7 +2,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_delivery_dbestech/controllers/cart_controller.dart';
+import 'package:food_delivery_dbestech/controllers/login_controller.dart';
 import 'package:food_delivery_dbestech/controllers/popular_product_controller.dart';
+import 'package:food_delivery_dbestech/controllers/regestation_controller.dart';
 import 'package:food_delivery_dbestech/helper/dependencies.dart' as dep;
 import 'package:food_delivery_dbestech/routes/route_helper.dart';
 import 'package:get/get.dart';
@@ -14,6 +16,12 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await dep.init();
+  Get.lazyPut(
+    () => LoginController(),
+  );
+    Get.lazyPut(
+    () => RegestationController(),
+  );
   runApp(const MyApp());
 }
 
@@ -25,7 +33,6 @@ class MyApp extends StatelessWidget {
     return GetBuilder<PopularProductController>(builder: (_) {
       return GetBuilder<RecommendedProductController>(builder: (_) {
         return ScreenUtilInit(
-          
             builder: (context, child) => GetMaterialApp(
                   debugShowCheckedModeBanner: false,
                   title: 'Flutter Demo',
